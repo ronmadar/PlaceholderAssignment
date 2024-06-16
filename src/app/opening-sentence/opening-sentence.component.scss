@@ -1,0 +1,39 @@
+.wrap-input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    .title-input{
+        color: #84818A;
+        font-size: 1rem;
+        font-weight: 700;
+        font-family: "Rubik", sans-serif;
+        
+    }
+    textarea {
+        resize: none;
+        background-color: #fff; /* Default background color */
+        
+    }
+    mat-form-field {
+        width: 100%; /* Adjust as needed */
+    }
+}
+
+.placeholders {   
+    padding: 12px 20px;
+    span {
+        display: inline-block;
+        margin-inline: 10px;
+        cursor: pointer;
+        background-color: #fff;
+        padding: 8px 10px;
+        color: #c5cbcf;
+        border: 1px solid #c5cbcf;
+        border-radius: 10px;
+        margin-block: 5px;
+    }
+}
+
+
+  

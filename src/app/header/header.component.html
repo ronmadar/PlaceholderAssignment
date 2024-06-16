@@ -1,0 +1,18 @@
+<mat-toolbar color="primary">
+    <span>My App</span>
+    <span class="spacer"></span>
+    <div class="draw-layout">
+        <mat-form-field *ngIf="isHandset">
+            <mat-label>Sidenav mode</mat-label>
+            <mat-select [(value)]="selectedValue" (selectionChange)="navigate($event.value)">
+                <a routerLink="/home"><mat-option value="home">Home</mat-option></a>
+                <a routerLink="/form"><mat-option value="form">form</mat-option></a>
+            </mat-select>
+        </mat-form-field>
+    </div>
+
+    <nav *ngIf="!isHandset" role="navigation">
+        <a routerLink="/home">Home</a>
+        <a routerLink="/form">Form</a>
+    </nav>
+</mat-toolbar>

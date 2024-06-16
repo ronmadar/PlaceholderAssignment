@@ -1,0 +1,24 @@
+<div class="wrap-placeholders">
+    <div fxLayout="column">
+        <div class="wrap-input">
+            <p class="title-input">Opening Sentence</p>
+            <mat-form-field fxFlex appearance="outline">
+                <textarea matInput #textarea
+                          [(ngModel)]="text" 
+                          (ngModelChange)="onChange($event)"
+                          placeholder="Enter your opening sentence..." 
+                          rows="5" 
+                          cols="50"
+                          spellcheck="false"
+                          [innerHTML]="text">>
+                </textarea>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="placeholders">
+        <span *ngFor="let placeholder of placeholders"
+              (click)="addPlaceholder(placeholder)">
+              {{placeholder}}
+        </span>
+    </div>
+</div>

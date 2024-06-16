@@ -1,0 +1,32 @@
+<div class="wrap-form">
+    <div class="space">
+        <div class="title">
+            <h1>Test Page</h1>
+        </div>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()" id="form-layout">
+            <div class="wrap-input">
+                <p class="title-input">Name</p>
+                <mat-form-field appearance="outline">
+                    <input matInput formControlName="name" required>
+                </mat-form-field>
+            </div>
+            <div class="wrap-input">
+                <p class="title-input">Phone</p>
+                <mat-form-field appearance="outline">
+                    <input matInput formControlName="phone" required>
+                </mat-form-field>
+            </div>
+            <app-opening-sentence class="" [placeholders]="['Agent Name', 'Company Name', 'First Name', 'Last Name']"
+                formControlName="openingSentence"></app-opening-sentence>
+            <button mat-raised-button type="submit" class="button">Submit</button>
+        </form>
+
+    </div>
+</div>
+<div class="wrap-card">
+    <div class="body-content">
+        <p class="content">
+            Unlock the Power of Conversation with NLPearl and  Transform Your Business Interactions
+        </p>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+
+.mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .mat-mdc-form-field-subscript-wrapper.mat-mdc-form-field-bottom-align{
+    display: none;
+  }
+  .draw-layout{
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav {
+    display: flex;
+    a {
+      text-decoration: none;
+      color:#ffffff;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+  }
+
+  .spacer {
+    flex: 1 1 auto;
+  }
+}
